@@ -1,0 +1,32 @@
+[
+  {
+    "userId": "current-user",
+    "profileId": 1,
+    "action": "pass",
+    "createdAt": "2026-11-18T13:26:03.378Z"
+  },
+  {
+    "userId": "current-user",
+    "profileId": 2,
+    "action": "pass",
+    "createdAt": "2026-11-18T14:30:39.319Z"
+  },
+  {
+    "userId": "current-user",
+    "profileId": 3,
+    "action": "like",
+    "createdAt": "2026-11-18T14:30:45.360Z"
+  },
+  {
+    "userId": "current-user",
+    "profileId": 4,
+    "action": "pass",
+    "createdAt": "2026-11-18T14:37:35.186Z"
+  },
+  {
+    "userId": "current-user",
+    "profileId": 5,
+    "action": "like",
+    "createdAt": "2026-11-18T14:37:37.456Z"
+  }
+]

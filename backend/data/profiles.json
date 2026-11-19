@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "name": "Ananya",
+    "age": 21,
+    "photo": "https://i.pravatar.cc/400?img=1",
+    "bio": "Exploring new places and collecting memories.",
+    "city": "Delhi",
+    "interests": [
+      "Travel",
+      "Photography",
+      "Music"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 2,
+    "name": "Riya",
+    "age": 22,
+    "photo": "https://i.pravatar.cc/400?img=2",
+    "bio": "Coffee lover, music enthusiast and dreamer.",
+    "city": "Mumbai",
+    "interests": [
+      "Reading",
+      "Coffee",
+      "Movies"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 3,
+    "name": "Priya",
+    "age": 23,
+    "photo": "https://i.pravatar.cc/400?img=3",
+    "bio": "Living life one adventure at a time.",
+    "city": "Bangalore",
+    "interests": [
+      "Fitness",
+      "Cooking",
+      "Dancing"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 4,
+    "name": "Sneha",
+    "age": 24,
+    "photo": "https://i.pravatar.cc/400?img=4",
+    "bio": "Foodie by nature, traveller by heart.",
+    "city": "Pune",
+    "interests": [
+      "Technology",
+      "Gaming",
+      "Cricket"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 5,
+    "name": "Aarav",
+    "age": 25,
+    "photo": "https://i.pravatar.cc/400?img=5",
+    "bio": "Love meaningful conversations and good vibes.",
+    "city": "Lucknow",
+    "interests": [
+      "Art",
+      "Fashion",
+      "Food"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 6,
+    "name": "Ishita",
+    "age": 26,
+    "photo": "https://i.pravatar.cc/400?img=6",
+    "bio": "Always looking for something new to learn.",
+    "city": "Hyderabad",
+    "interests": [
+      "Hiking",
+      "Nature",
+      "Adventure"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 7,
+    "name": "Kavya",
+    "age": 27,
+    "photo": "https://i.pravatar.cc/400?img=7",
+    "bio": "Exploring new places and collecting memories.",
+    "city": "Chandigarh",
+    "interests": [
+      "Travel",
+      "Photography",
+      "Music"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 8,
+    "name": "Rahul",
+    "age": 28,
+    "photo": "https://i.pravatar.cc/400?img=8",
+    "bio": "Coffee lover, music enthusiast and dreamer.",
+    "city": "Jaipur",
+    "interests": [
+      "Reading",
+      "Coffee",
+      "Movies"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 9,
+    "name": "Aditya",
+    "age": 29,
+    "photo": "https://i.pravatar.cc/400?img=9",
+    "bio": "Living life one adventure at a time.",
+    "city": "Gurugram",
+    "interests": [
+      "Fitness",
+      "Cooking",
+      "Dancing"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 10,
+    "name": "Meera",
+    "age": 21,
+    "photo": "https://i.pravatar.cc/400?img=10",
+    "bio": "Foodie by nature, traveller by heart.",
+    "city": "Noida",
+    "interests": [
+      "Technology",
+      "Gaming",
+      "Cricket"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 11,
+    "name": "Arjun",
+    "age": 22,
+    "photo": "https://i.pravatar.cc/400?img=11",
+    "bio": "Love meaningful conversations and good vibes.",
+    "city": "Delhi",
+    "interests": [
+      "Art",
+      "Fashion",
+      "Food"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 12,
+    "name": "Neha",
+    "age": 23,
+    "photo": "https://i.pravatar.cc/400?img=12",
+    "bio": "Always looking for something new to learn.",
+    "city": "Mumbai",
+    "interests": [
+      "Hiking",
+      "Nature",
+      "Adventure"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 13,
+    "name": "Simran",
+    "age": 24,
+    "photo": "https://i.pravatar.cc/400?img=13",
+    "bio": "Exploring new places and collecting memories.",
+    "city": "Bangalore",
+    "interests": [
+      "Travel",
+      "Photography",
+      "Music"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 14,
+    "name": "Kabir",
+    "age": 25,
+    "photo": "https://i.pravatar.cc/400?img=14",
+    "bio": "Coffee lover, music enthusiast and dreamer.",
+    "city": "Pune",
+    "interests": [
+      "Reading",
+      "Coffee",
+      "Movies"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 15,
+    "name": "Aisha",
+    "age": 26,
+    "photo": "https://i.pravatar.cc/400?img=15",
+    "bio": "Living life one adventure at a time.",
+    "city": "Lucknow",
+    "interests": [
+      "Fitness",
+      "Cooking",
+      "Dancing"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 16,
+    "name": "Vihaan",
+    "age": 27,
+    "photo": "https://i.pravatar.cc/400?img=16",
+    "bio": "Foodie by nature, traveller by heart.",
+    "city": "Hyderabad",
+    "interests": [
+      "Technology",
+      "Gaming",
+      "Cricket"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 17,
+    "name": "Pooja",
+    "age": 28,
+    "photo": "https://i.pravatar.cc/400?img=17",
+    "bio": "Love meaningful conversations and good vibes.",
+    "city": "Chandigarh",
+    "interests": [
+      "Art",
+      "Fashion",
+      "Food"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 18,
+    "name": "Dev",
+    "age": 29,
+    "photo": "https://i.pravatar.cc/400?img=18",
+    "bio": "Always looking for something new to learn.",
+    "city": "Jaipur",
+    "interests": [
+      "Hiking",
+      "Nature",
+      "Adventure"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 19,
+    "name": "Sanya",
+    "age": 21,
+    "photo": "https://i.pravatar.cc/400?img=19",
+    "bio": "Exploring new places and collecting memories.",
+    "city": "Gurugram",
+    "interests": [
+      "Travel",
+      "Photography",
+      "Music"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 20,
+    "name": "Rohan",
+    "age": 22,
+    "photo": "https://i.pravatar.cc/400?img=20",
+    "bio": "Coffee lover, music enthusiast and dreamer.",
+    "city": "Noida",
+    "interests": [
+      "Reading",
+      "Coffee",
+      "Movies"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 21,
+    "name": "Tanya",
+    "age": 23,
+    "photo": "https://i.pravatar.cc/400?img=21",
+    "bio": "Living life one adventure at a time.",
+    "city": "Delhi",
+    "interests": [
+      "Fitness",
+      "Cooking",
+      "Dancing"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 22,
+    "name": "Ishaan",
+    "age": 24,
+    "photo": "https://i.pravatar.cc/400?img=22",
+    "bio": "Foodie by nature, traveller by heart.",
+    "city": "Mumbai",
+    "interests": [
+      "Technology",
+      "Gaming",
+      "Cricket"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 23,
+    "name": "Diya",
+    "age": 25,
+    "photo": "https://i.pravatar.cc/400?img=23",
+    "bio": "Love meaningful conversations and good vibes.",
+    "city": "Bangalore",
+    "interests": [
+      "Art",
+      "Fashion",
+      "Food"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 24,
+    "name": "Karan",
+    "age": 26,
+    "photo": "https://i.pravatar.cc/400?img=24",
+    "bio": "Always looking for something new to learn.",
+    "city": "Pune",
+    "interests": [
+      "Hiking",
+      "Nature",
+      "Adventure"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 25,
+    "name": "Naina",
+    "age": 27,
+    "photo": "https://i.pravatar.cc/400?img=25",
+    "bio": "Exploring new places and collecting memories.",
+    "city": "Lucknow",
+    "interests": [
+      "Travel",
+      "Photography",
+      "Music"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 26,
+    "name": "Reyansh",
+    "age": 28,
+    "photo": "https://i.pravatar.cc/400?img=26",
+    "bio": "Coffee lover, music enthusiast and dreamer.",
+    "city": "Hyderabad",
+    "interests": [
+      "Reading",
+      "Coffee",
+      "Movies"
+    ],
+    "likedMe": true
+  },
+  {
+    "id": 27,
+    "name": "Maya",
+    "age": 29,
+    "photo": "https://i.pravatar.cc/400?img=27",
+    "bio": "Living life one adventure at a time.",
+    "city": "Chandigarh",
+    "interests": [
+      "Fitness",
+      "Cooking",
+      "Dancing"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 28,
+    "name": "Aryan",
+    "age": 21,
+    "photo": "https://i.pravatar.cc/400?img=28",
+    "bio": "Foodie by nature, traveller by heart.",
+    "city": "Jaipur",
+    "interests": [
+      "Technology",
+      "Gaming",
+      "Cricket"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 29,
+    "name": "Kiara",
+    "age": 22,
+    "photo": "https://i.pravatar.cc/400?img=29",
+    "bio": "Love meaningful conversations and good vibes.",
+    "city": "Gurugram",
+    "interests": [
+      "Art",
+      "Fashion",
+      "Food"
+    ],
+    "likedMe": false
+  },
+  {
+    "id": 30,
+    "name": "Siddharth",
+    "age": 23,
+    "photo": "https://i.pravatar.cc/400?img=30",
+    "bio": "Always looking for something new to learn.",
+    "city": "Noida",
+    "interests": [
+      "Hiking",
+      "Nature",
+      "Adventure"
+    ],
+    "likedMe": false
+  }
+]

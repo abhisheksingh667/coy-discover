@@ -1,0 +1,555 @@
+
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background: #f8f7f9;
+  color: #25232a;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ==============================
+   APP LAYOUT
+============================== */
+
+.app {
+  min-height: 100vh;
+  padding-bottom: 95px;
+}
+
+.header {
+  height: 72px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1px solid #eeeaf0;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -2px;
+}
+
+.logo span {
+  color: #e65b78;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #77717d;
+  font-size: 13px;
+}
+
+.main {
+  max-width: 1050px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+/* ==============================
+   DISCOVER SECTION
+============================== */
+
+.discover-section {
+  max-width: 440px;
+  margin: auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.section-heading h1,
+.matches-section h1 {
+  font-size: 28px;
+  font-weight: 750;
+}
+
+.section-heading p,
+.matches-section > p {
+  color: #88818d;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.profile-count {
+  color: #e65b78;
+  background: #fdebf0;
+  border-radius: 20px;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ==============================
+   PROFILE CARD
+============================== */
+
+.profile-card {
+  position: relative;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 12px 40px rgba(40, 20, 40, 0.10);
+
+  /* Swipe gesture support */
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: grab;
+
+  /* Smooth swipe animation */
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.profile-card.dragging {
+  cursor: grabbing;
+}
+
+/* Card flies left when passed */
+.profile-card.left {
+  transform: translateX(-150%) rotate(-25deg) !important;
+  opacity: 0;
+}
+
+/* Card flies right when liked */
+.profile-card.right {
+  transform: translateX(150%) rotate(25deg) !important;
+  opacity: 0;
+}
+
+/* ==============================
+   PROFILE IMAGE
+============================== */
+
+.profile-image-wrapper {
+  position: relative;
+  height: 420px;
+  background: #e9e4e9;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-user-drag: none;
+  pointer-events: none;
+}
+
+.image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    transparent 50%,
+    rgba(0, 0, 0, 0.65)
+  );
+  pointer-events: none;
+}
+
+/* ==============================
+   PROFILE INFORMATION
+============================== */
+
+.profile-info {
+  position: absolute;
+  bottom: 20px;
+  left: 22px;
+  color: white;
+  pointer-events: none;
+}
+
+.profile-info h2 {
+  font-size: 29px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.profile-details {
+  padding: 20px 22px 8px;
+}
+
+.profile-details > p {
+  color: #625d67;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.interests span {
+  padding: 7px 12px;
+  border-radius: 20px;
+  background: #f6f1f4;
+  color: #625d67;
+  font-size: 12px;
+}
+
+/* ==============================
+   LIKE / PASS SWIPE LABELS
+============================== */
+
+.swipe-label {
+  position: absolute;
+  top: 35px;
+  z-index: 10;
+  padding: 9px 18px;
+  border: 3px solid;
+  border-radius: 9px;
+  font-size: 25px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  pointer-events: none;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(5px);
+}
+
+.like-label {
+  left: 25px;
+  color: #16a36a;
+  border-color: #16a36a;
+  transform: rotate(-12deg);
+}
+
+.pass-label {
+  right: 25px;
+  color: #e65b78;
+  border-color: #e65b78;
+  transform: rotate(12deg);
+}
+
+/* ==============================
+   SWIPE BUTTONS
+============================== */
+
+.swipe-actions {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding: 20px 0 24px;
+}
+
+.swipe-actions button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.swipe-actions button:hover {
+  transform: scale(1.12);
+}
+
+.pass-button {
+  border: 1px solid #e9dfe3;
+  color: #88818d;
+}
+
+.like-button {
+  border: none;
+  background: #e65b78 !important;
+  color: white;
+  box-shadow: 0 5px 15px #e65b7840;
+}
+
+/* ==============================
+   BOTTOM NAVIGATION
+============================== */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 75px;
+  background: white;
+  border-top: 1px solid #eeeaf0;
+  z-index: 10;
+}
+
+.bottom-nav button {
+  border: none;
+  background: transparent;
+  color: #aaa3af;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  position: relative;
+}
+
+.bottom-nav button.active {
+  color: #e65b78;
+  font-weight: 700;
+}
+
+.match-badge {
+  position: absolute;
+  top: -7px;
+  right: -12px;
+  background: #e65b78;
+  color: white;
+  border-radius: 50%;
+  min-width: 17px;
+  height: 17px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
+
+/* ==============================
+   EMPTY AND LOADING STATES
+============================== */
+
+.empty-state,
+.loading {
+  text-align: center;
+  padding: 90px 20px;
+  color: #88818d;
+}
+
+.empty-state svg {
+  color: #e65b78;
+  margin-bottom: 18px;
+}
+
+.empty-state h2 {
+  color: #29242c;
+  margin-bottom: 9px;
+}
+
+.empty-state p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ==============================
+   MATCHES SECTION
+============================== */
+
+.matches-section {
+  max-width: 600px;
+  margin: auto;
+}
+
+.matches-list {
+  margin-top: 28px;
+}
+
+.match-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #eeeaf0;
+}
+
+.match-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.match-item div {
+  flex: 1;
+}
+
+.match-item h3 {
+  font-size: 15px;
+}
+
+.match-item p {
+  color: #88818d;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/* ==============================
+   MATCH POPUP
+============================== */
+
+.match-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 15, 25, 0.82);
+  display: grid;
+  place-items: center;
+  z-index: 20;
+  padding: 20px;
+}
+
+.match-popup {
+  background: white;
+  border-radius: 25px;
+  padding: 35px 25px;
+  max-width: 370px;
+  width: 100%;
+  text-align: center;
+}
+
+.match-popup h1 {
+  color: #e65b78;
+  margin: 12px 0;
+}
+
+.match-popup p {
+  color: #77717d;
+  font-size: 14px;
+}
+
+.match-popup img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 22px auto;
+  display: block;
+}
+
+.match-popup button {
+  background: #e65b78;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 13px 22px;
+  font-weight: 700;
+}
+
+/* ==============================
+   ERROR MESSAGE
+============================== */
+
+.error-message {
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff0f0;
+  color: #b42318;
+  border-radius: 10px;
+  font-size: 13px;
+}
+
+.error-message button {
+  margin-left: 10px;
+  border: none;
+  color: #b42318;
+  background: transparent;
+  font-weight: 700;
+}
+
+/* ==============================
+   LOADING SPINNER
+============================== */
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==============================
+   PROFILE ENTRANCE ANIMATION
+============================== */
+
+@keyframes cardEntrance {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.profile-card:not(.left):not(.right) {
+  animation: cardEntrance 0.35s ease;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+
+@media (max-width: 600px) {
+  .header {
+    padding: 0 20px;
+  }
+
+  .main {
+    padding: 25px 14px;
+  }
+
+  .profile-image-wrapper {
+    height: 420px;
+  }
+
+  .bottom-nav {
+    justify-content: space-around;
+    gap: 0;
+  }
+
+  .section-heading h1,
+  .matches-section h1 {
+    font-size: 25px;
+  }
+
+  .swipe-label {
+    font-size: 21px;
+    padding: 7px 13px;
+  }
+}
+
+@media (min-width: 700px) {
+  .profile-image-wrapper {
+    height: 470px;
+  }
+}
